@@ -1,17 +1,28 @@
+<!--
+  This is the ONE html file for the entire site. React apps are called
+  "Single Page Applications" (SPAs) because the browser only ever loads
+  this one page — React then swaps content in and out of <div id="root">
+  as the user navigates, without a full page reload.
+-->
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Edit this description to change how the site shows up in Google/social previews -->
     <meta name="description" content="Pranjal Chamoli — Computer Science undergrad building full-stack and AI-powered applications." />
+    <!-- Edit this to change the browser tab title -->
     <title>Pranjal Chamoli — Software Engineer</title>
+    <!-- Loads the Inter font from Google Fonts. Change the family name here to swap fonts. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   </head>
   <body>
+    <!-- React mounts the entire app inside this empty div. See src/main.jsx. -->
     <div id="root"></div>
+    <!-- Entry point script. Vite processes this and everything it imports. -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

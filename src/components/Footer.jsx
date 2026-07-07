@@ -1,6 +1,8 @@
+// The site footer — shown once, at the very bottom of every page, below <main>.
 import { profile } from '../data/portfolioData'
 
 export default function Footer() {
+  // Computed live so the copyright year is always correct without manual edits.
   const year = new Date().getFullYear()
 
   return (

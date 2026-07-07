@@ -1,8 +1,12 @@
+// The "Certifications" section — one clickable card per entry in the
+// `certifications` array (src/data/portfolioData.js). Clicking a card opens
+// the credential link (once you replace the "#" placeholders).
 import { certifications } from '../data/portfolioData'
 import FadeIn from './FadeIn'
 
 export default function Certifications() {
   return (
+    // id="certifications" is what the navbar's "Certifications" link scrolls to.
     <section id="certifications" className="py-24 md:py-32 border-t border-neutral-100">
       <div className="max-w-6xl mx-auto px-6">
         <FadeIn>
@@ -17,6 +21,7 @@ export default function Certifications() {
         <div className="grid sm:grid-cols-3 gap-6">
           {certifications.map((cert, i) => (
             <FadeIn key={cert.name} delay={i * 80}>
+              {/* The whole card is a link, not just the "View Credential" text */}
               <a
                 href={cert.link}
                 target={cert.link.startsWith('#') ? undefined : '_blank'}

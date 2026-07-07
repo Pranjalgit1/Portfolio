@@ -1,8 +1,14 @@
+// The "Contact" section. This is a static site with no backend, so instead
+// of a submit-able form it offers direct "mailto:" and "tel:" links that open
+// the visitor's own email/phone app pre-filled with your address/number.
+// (See docs/Future MERN Migration.md for how to turn this into a real form
+// backed by a Node/Express API later.)
 import { profile } from '../data/portfolioData'
 import FadeIn from './FadeIn'
 
 export default function Contact() {
   return (
+    // id="contact" is what the navbar's "Contact" link scrolls to.
     <section id="contact" className="py-24 md:py-32 border-t border-neutral-100">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <FadeIn>

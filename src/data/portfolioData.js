@@ -1,5 +1,14 @@
+// ============================================================================
+// THIS FILE IS THE SINGLE SOURCE OF TRUTH FOR ALL PORTFOLIO CONTENT.
+// Every component (Hero, About, Projects, Skills, etc.) imports its text from
+// here instead of hardcoding it. This means you almost never need to touch
+// component files just to update your name, projects, or skills — edit the
+// values below and every place they're used updates automatically.
+//
 // TODO: replace all "#" placeholder links below with real URLs.
+// ============================================================================
 
+// Shown in the Hero section and Footer: your name, tagline, and social links.
 export const profile = {
   name: 'Pranjal Chamoli',
   role: 'Computer Science Undergrad & Full-Stack / AI Developer',
@@ -14,11 +23,14 @@ export const profile = {
   },
 }
 
+// The paragraph shown in the "About" section (src/components/About.jsx).
 export const about = `I'm a Computer Science undergraduate at Graphic Era University, Dehradun, maintaining a 9.45 CGPA. \
 I build full-stack web applications and explore applied AI — from Generative AI and LLMs to Retrieval-Augmented \
 Generation. I enjoy turning complex problems, like visualizing graph algorithms or automating code review, into \
 clean, usable software.`
 
+// Each entry becomes one dot on the vertical timeline in src/components/Timeline.jsx.
+// Order matters — they render top to bottom in this array order.
 export const education = [
   {
     institution: 'Graphic Era University, Dehradun',
@@ -40,6 +52,9 @@ export const education = [
   },
 ]
 
+// Each object becomes one card in src/components/Projects.jsx (rendered via ProjectCard.jsx).
+// To add a project: copy one of these objects and add it to the array.
+// To remove a project: delete its object from the array.
 export const projects = [
   {
     name: 'TradeX — Stock Trading Platform',
@@ -80,6 +95,9 @@ export const projects = [
   },
 ]
 
+// Grouped skill categories rendered as cards in src/components/Skills.jsx.
+// To add a skill, add a string to an "items" array. To add a whole new
+// category, add a new { category, items } object.
 export const skills = [
   {
     category: 'Languages',
@@ -107,6 +125,7 @@ export const skills = [
   },
 ]
 
+// Rendered as cards in src/components/Certifications.jsx.
 export const certifications = [
   {
     name: 'Google Cloud Computing Foundations Certificate',
@@ -125,6 +144,9 @@ export const certifications = [
   },
 ]
 
+// The links shown in the navbar (src/components/Navbar.jsx). "href" must
+// match the "id" of the <section> it should scroll to (e.g. #about matches
+// <section id="about"> in About.jsx).
 export const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Education', href: '#education' },

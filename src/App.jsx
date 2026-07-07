@@ -1,3 +1,7 @@
+// App is the root component of the site. It doesn't hold much logic itself —
+// its job is to lay out every section of the page in order, top to bottom.
+// To reorder sections (e.g. move Skills above Projects), just reorder these
+// lines. To add a new section, create a component and add it here.
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'

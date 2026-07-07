@@ -1,8 +1,11 @@
+// The "Skills" section — one card per category in the `skills` array
+// (src/data/portfolioData.js), each showing its list of items as pills.
 import { skills } from '../data/portfolioData'
 import FadeIn from './FadeIn'
 
 export default function Skills() {
   return (
+    // id="skills" is what the navbar's "Skills" link scrolls to.
     <section id="skills" className="py-24 md:py-32 border-t border-neutral-100">
       <div className="max-w-6xl mx-auto px-6">
         <FadeIn>
@@ -14,6 +17,7 @@ export default function Skills() {
           </h2>
         </FadeIn>
 
+        {/* 1 column on mobile, 2 on tablet ("sm"), 3 on desktop ("lg") */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((group, i) => (
             <FadeIn key={group.category} delay={i * 80}>

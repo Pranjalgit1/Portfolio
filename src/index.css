@@ -1,16 +1,22 @@
+/* These three lines pull in Tailwind's generated CSS (base resets, component
+   classes, and utility classes like "flex" or "text-lg"). This file is
+   imported once, in src/main.jsx, and applies to the entire site. */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Makes clicking a nav link (e.g. #projects) glide-scroll instead of jumping instantly. */
 html {
   scroll-behavior: smooth;
 }
 
+/* Default background, text color, and font for the whole site. */
 body {
   @apply bg-white text-neutral-900 antialiased;
   font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
 }
 
+/* Styles the accent color of highlighted (selected) text. Purely cosmetic. */
 ::selection {
   @apply bg-accent/20 text-neutral-900;
 }

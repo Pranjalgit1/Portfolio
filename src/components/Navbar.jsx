@@ -1,14 +1,18 @@
+// The sticky navigation bar pinned to the top of every page. It's transparent
+// over the Hero section and gains a white blurred background + border once
+// the user scrolls down, so it stays readable over any content.
 import { useEffect, useState } from 'react'
 import { navLinks } from '../data/portfolioData'
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false)
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false) // true once the page has scrolled a bit
+  const [menuOpen, setMenuOpen] = useState(false) // controls the mobile hamburger menu
 
+  // Listens to the window's scroll position to toggle the "scrolled" style.
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8)
     window.addEventListener('scroll', onScroll)
-    return () => window.removeEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', onScroll) // cleanup on unmount
   }, [])
 
   return (
@@ -18,10 +22,12 @@ export default function Navbar() {
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        {/* Site name / logo. Links to #top (the Hero section's id). */}
         <a href="#top" className="font-semibold tracking-tight text-neutral-900">
           Pranjal Chamoli
         </a>
 
+        {/* Desktop nav links — hidden on small screens (see "hidden md:flex"). */}
         <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <li key={link.href}>
@@ -35,12 +41,14 @@ export default function Navbar() {
           ))}
         </ul>
 
+        {/* Hamburger button — only shown on small screens ("md:hidden"). */}
         <button
           className="md:hidden p-2 -mr-2 text-neutral-700"
           onClick={() => setMenuOpen((v) => !v)}
           aria-label="Toggle menu"
         >
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            {/* Swaps between an X icon (menu open) and a hamburger icon (menu closed) */}
             {menuOpen ? (
               <path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" />
             ) : (
@@ -50,6 +58,7 @@ export default function Navbar() {
         </button>
       </nav>
 
+      {/* Mobile dropdown menu — only rendered when menuOpen is true. */}
       {menuOpen && (
         <div className="md:hidden bg-white border-b border-neutral-200">
           <ul className="px-6 py-4 flex flex-col gap-4">
@@ -57,7 +66,7 @@ export default function Navbar() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  onClick={() => setMenuOpen(false)}
+                  onClick={() => setMenuOpen(false)} // close the menu after tapping a link
                   className="text-sm text-neutral-700 hover:text-neutral-900"
                 >
                   {link.label}
