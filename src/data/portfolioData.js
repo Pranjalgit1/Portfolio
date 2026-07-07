@@ -12,7 +12,7 @@
 export const profile = {
   name: 'Pranjal Chamoli',
   role: 'Computer Science Undergrad & Full-Stack / AI Developer',
-  tagline: 'Building full-stack products and AI-powered tools — from trading platforms to code review assistants.',
+  tagline: 'Code. Create. Deploy. Repeat.',
   location: 'Dehradun, India',
   email: 'pranjalchamoli99@gmail.com',
   links: {
