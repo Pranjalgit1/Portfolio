@@ -62,16 +62,7 @@ export const projects = [
       'Full-stack stock trading platform with portfolio tracking and order management. Secure Node.js/Express APIs process buy/sell transactions, with React dashboards visualizing holdings and trading activity, backed by MongoDB schemas for users, trades, and portfolios.',
     links: {
       source: '#', // TODO: add source code URL
-    },
-  },
-  {
-    name: 'AI Code Reviewer',
-    stack: ['Node.js', 'Express', 'Vanilla JS', 'Pollinations AI', 'Vercel'],
-    description:
-      'Full-stack code review tool with a dark, GitHub-style UI. Node.js/Express backend integrates Pollinations AI for automated code analysis and bug detection via OpenAI models, deployed on Vercel with serverless functions.',
-    links: {
-      source: '#', // TODO: add source code URL
-      demo: '#', // TODO: add live demo URL
+      demo: 'https://tradex1.vercel.app/',
     },
   },
   {
@@ -81,6 +72,7 @@ export const projects = [
       'Interactive desktop app visualizing Dijkstra’s, Bellman-Ford, Kruskal’s, and Topological Sort. Features dual Single/Compare execution modes with real-time step animation, synchronized pseudocode highlighting, and a drag-and-drop canvas for editing graphs.',
     links: {
       source: '#', // TODO: add source code URL
+      demo: 'https://web-theta-mocha-75.vercel.app/',
     },
   },
   {
