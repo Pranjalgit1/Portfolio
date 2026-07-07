@@ -17,9 +17,9 @@ export const profile = {
   email: 'pranjalchamoli99@gmail.com',
   phone: 'REDACTED',
   links: {
-    github: '#', // TODO: add GitHub profile URL
-    linkedin: '#', // TODO: add LinkedIn profile URL
-    leetcode: '#', // TODO: add LeetCode profile URL
+    github: 'https://github.com/Pranjalgit1', 
+    linkedin: 'https://www.linkedin.com/in/pranjalchamoli/', 
+    leetcode: 'https://leetcode.com/u/pranjalgit1/', 
   },
 }
 
