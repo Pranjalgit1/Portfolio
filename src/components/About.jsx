@@ -1,0 +1,22 @@
+import { about } from '../data/portfolioData'
+import FadeIn from './FadeIn'
+
+export default function About() {
+  return (
+    <section id="about" className="py-24 md:py-32 border-t border-neutral-100">
+      <div className="max-w-6xl mx-auto px-6">
+        <FadeIn>
+          <p className="text-sm font-medium text-accent mb-3">About</p>
+        </FadeIn>
+        <FadeIn delay={80}>
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-neutral-900 mb-6">
+            A little about me
+          </h2>
+        </FadeIn>
+        <FadeIn delay={160}>
+          <p className="max-w-3xl text-base md:text-lg text-neutral-500 leading-relaxed">{about}</p>
+        </FadeIn>
+      </div>
+    </section>
+  )
+}

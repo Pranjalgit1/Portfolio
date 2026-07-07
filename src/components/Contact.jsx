@@ -1,0 +1,40 @@
+import { profile } from '../data/portfolioData'
+import FadeIn from './FadeIn'
+
+export default function Contact() {
+  return (
+    <section id="contact" className="py-24 md:py-32 border-t border-neutral-100">
+      <div className="max-w-6xl mx-auto px-6 text-center">
+        <FadeIn>
+          <p className="text-sm font-medium text-accent mb-3">Contact</p>
+        </FadeIn>
+        <FadeIn delay={80}>
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-neutral-900">
+            Let's build something together
+          </h2>
+        </FadeIn>
+        <FadeIn delay={160}>
+          <p className="mt-4 max-w-xl mx-auto text-neutral-500">
+            I'm open to internships, collaborations, and interesting problems. Reach out and I'll get back to you.
+          </p>
+        </FadeIn>
+        <FadeIn delay={240}>
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href={`mailto:${profile.email}`}
+              className="inline-flex items-center px-6 py-3 rounded-full bg-neutral-900 text-white text-sm font-medium hover:bg-neutral-700 transition-colors"
+            >
+              {profile.email}
+            </a>
+            <a
+              href={`tel:${profile.phone}`}
+              className="inline-flex items-center px-6 py-3 rounded-full border border-neutral-200 text-neutral-700 text-sm font-medium hover:border-neutral-300 hover:bg-neutral-50 transition-colors"
+            >
+              {profile.phone}
+            </a>
+          </div>
+        </FadeIn>
+      </div>
+    </section>
+  )
+}

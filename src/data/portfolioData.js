@@ -1,0 +1,135 @@
+// TODO: replace all "#" placeholder links below with real URLs.
+
+export const profile = {
+  name: 'Pranjal Chamoli',
+  role: 'Computer Science Undergrad & Full-Stack / AI Developer',
+  tagline: 'Building full-stack products and AI-powered tools — from trading platforms to code review assistants.',
+  location: 'Dehradun, India',
+  email: 'pranjalchamoli99@gmail.com',
+  phone: 'REDACTED',
+  links: {
+    github: '#', // TODO: add GitHub profile URL
+    linkedin: '#', // TODO: add LinkedIn profile URL
+    leetcode: '#', // TODO: add LeetCode profile URL
+  },
+}
+
+export const about = `I'm a Computer Science undergraduate at Graphic Era University, Dehradun, maintaining a 9.45 CGPA. \
+I build full-stack web applications and explore applied AI — from Generative AI and LLMs to Retrieval-Augmented \
+Generation. I enjoy turning complex problems, like visualizing graph algorithms or automating code review, into \
+clean, usable software.`
+
+export const education = [
+  {
+    institution: 'Graphic Era University, Dehradun',
+    credential: 'B.Tech in Computer Science & Engineering',
+    period: '2024 – 2028',
+    detail: '9.45 CGPA',
+  },
+  {
+    institution: 'Rishiram Shikshan Sansthan, Uttarkashi',
+    credential: 'CBSE Class XII',
+    period: '2023',
+    detail: '94.4%',
+  },
+  {
+    institution: 'Rishiram Shikshan Sansthan, Uttarkashi',
+    credential: 'CBSE Class X',
+    period: '2021',
+    detail: '92.0%',
+  },
+]
+
+export const projects = [
+  {
+    name: 'TradeX — Stock Trading Platform',
+    stack: ['React', 'Node.js', 'Express', 'MongoDB'],
+    description:
+      'Full-stack stock trading platform with portfolio tracking and order management. Secure Node.js/Express APIs process buy/sell transactions, with React dashboards visualizing holdings and trading activity, backed by MongoDB schemas for users, trades, and portfolios.',
+    links: {
+      source: '#', // TODO: add source code URL
+    },
+  },
+  {
+    name: 'AI Code Reviewer',
+    stack: ['Node.js', 'Express', 'Vanilla JS', 'Pollinations AI', 'Vercel'],
+    description:
+      'Full-stack code review tool with a dark, GitHub-style UI. Node.js/Express backend integrates Pollinations AI for automated code analysis and bug detection via OpenAI models, deployed on Vercel with serverless functions.',
+    links: {
+      source: '#', // TODO: add source code URL
+      demo: '#', // TODO: add live demo URL
+    },
+  },
+  {
+    name: 'Graph Algorithm Visualizer',
+    stack: ['Java', 'JavaFX', 'Data Structures'],
+    description:
+      'Interactive desktop app visualizing Dijkstra’s, Bellman-Ford, Kruskal’s, and Topological Sort. Features dual Single/Compare execution modes with real-time step animation, synchronized pseudocode highlighting, and a drag-and-drop canvas for editing graphs.',
+    links: {
+      source: '#', // TODO: add source code URL
+    },
+  },
+  {
+    name: 'Quiz Master',
+    stack: ['Java', 'JavaFX', 'SQLite', 'Maven'],
+    description:
+      'Desktop quiz application built with Java 21 and a complete MVC architecture. Uses an embedded SQLite database for offline storage and Maven for build automation, with a results dashboard for performance analytics.',
+    links: {
+      source: '#', // TODO: add source code URL
+    },
+  },
+]
+
+export const skills = [
+  {
+    category: 'Languages',
+    items: ['Python', 'Java', 'C', 'C++', 'SQL', 'JavaScript'],
+  },
+  {
+    category: 'Web Development',
+    items: ['HTML', 'CSS', 'Tailwind CSS', 'Node.js', 'Express.js', 'REST APIs'],
+  },
+  {
+    category: 'Cloud Computing',
+    items: ['Google Cloud Platform', 'Compute Engine', 'Cloud Storage', 'IAM', 'Virtual Machines'],
+  },
+  {
+    category: 'AI & Machine Learning',
+    items: ['Generative AI', 'Large Language Models', 'Retrieval-Augmented Generation'],
+  },
+  {
+    category: 'Databases',
+    items: ['MongoDB', 'SQL'],
+  },
+  {
+    category: 'Tools & Platforms',
+    items: ['Linux', 'Git', 'GitHub', 'Vercel', 'VS Code', 'Android Studio', 'IntelliJ IDEA'],
+  },
+]
+
+export const certifications = [
+  {
+    name: 'Google Cloud Computing Foundations Certificate',
+    issuer: 'Google Cloud',
+    link: '#', // TODO: add credential URL
+  },
+  {
+    name: 'Oracle Cloud Infrastructure 2025 Certified Generative AI Professional',
+    issuer: 'Oracle',
+    link: '#', // TODO: add credential URL
+  },
+  {
+    name: 'C++ SkillUp Certification',
+    issuer: 'GeeksforGeeks',
+    link: '#', // TODO: add credential URL
+  },
+]
+
+export const navLinks = [
+  { label: 'About', href: '#about' },
+  { label: 'Education', href: '#education' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Skills', href: '#skills' },
+  { label: 'Certifications', href: '#certifications' },
+  { label: 'Contact', href: '#contact' },
+]
