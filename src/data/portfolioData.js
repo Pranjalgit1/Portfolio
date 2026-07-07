@@ -81,7 +81,7 @@ export const projects = [
     description:
       'Desktop quiz application built with Java 21 and a complete MVC architecture. Uses an embedded SQLite database for offline storage and Maven for build automation, with a results dashboard for performance analytics.',
     links: {
-      source: '#', // TODO: add source code URL
+      source: 'https://github.com/Pranjalgit1/Dynamic_Quiz_App',
     },
   },
 ]
