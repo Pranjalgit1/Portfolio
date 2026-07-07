@@ -121,18 +121,23 @@ export const certifications = [
   {
     name: 'Google Cloud Computing Foundations Certificate',
     issuer: 'Google Cloud',
-    link: '#', // TODO: add credential URL
+    link: 'https://www.credly.com/earner/earned/badge/92ab19c0-52d6-4d2c-abf5-59d69ff1f106', // TODO: add credential URL
   },
   {
     name: 'Oracle Cloud Infrastructure 2025 Certified Generative AI Professional',
     issuer: 'Oracle',
-    link: '#', // TODO: add credential URL
+    link: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=75A55F251E11250A904A12F6DF46616554AD83A2C743231ACC648E7E9130976E', // TODO: add credential URL
   },
   {
     name: 'C++ SkillUp Certification',
     issuer: 'GeeksforGeeks',
-    link: '#', // TODO: add credential URL
+    link: 'https://www.geeksforgeeks.org/certificate/dd0ae2a7f0bd07fdf5d3b58edcf86e25', // TODO: add credential URL
   },
+  {
+    name: 'Java (Basic)',
+    issuer: 'HackerRank',
+    link: 'https://www.hackerrank.com/certificates/5c2596225316'
+  }
 ]
 
 // The links shown in the navbar (src/components/Navbar.jsx). "href" must
