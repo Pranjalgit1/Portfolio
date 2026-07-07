@@ -4,6 +4,10 @@
 export default {
   // Tailwind scans these files for class names so it only ships the CSS you actually use.
   content: ['./index.html', './src/**/*.{js,jsx}'],
+  // 'class' means dark mode is controlled by a "dark" class on <html> (toggled
+  // in src/components/ThemeToggle.jsx), not just by OS-level preference.
+  // This lets the toggle button override the system setting.
+  darkMode: 'class',
   theme: {
     extend: {
       // Change the default font for the whole site here.

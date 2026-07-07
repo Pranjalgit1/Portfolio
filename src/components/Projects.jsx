@@ -7,13 +7,13 @@ import FadeIn from './FadeIn'
 export default function Projects() {
   return (
     // id="projects" is what the navbar's "Projects" link scrolls to.
-    <section id="projects" className="py-24 md:py-32 border-t border-neutral-100">
+    <section id="projects" className="py-24 md:py-32 border-t border-neutral-100 dark:border-neutral-800">
       <div className="max-w-6xl mx-auto px-6">
         <FadeIn>
           <p className="text-sm font-medium text-accent mb-3">Projects</p>
         </FadeIn>
         <FadeIn delay={80}>
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-neutral-900 mb-14">
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-neutral-900 dark:text-white mb-14">
             Things I've built
           </h2>
         </FadeIn>

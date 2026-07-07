@@ -29,7 +29,7 @@ function SocialIcon({ href, kind, label }) {
       target={href.startsWith('#') ? undefined : '_blank'}
       rel="noreferrer"
       aria-label={label}
-      className="w-10 h-10 flex items-center justify-center rounded-full border border-neutral-200 text-neutral-500 hover:text-neutral-900 hover:border-neutral-300 hover:-translate-y-0.5 transition-all"
+      className="w-10 h-10 flex items-center justify-center rounded-full border border-neutral-200 dark:border-neutral-700 text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white hover:border-neutral-300 dark:hover:border-neutral-500 hover:-translate-y-0.5 transition-all"
     >
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
         {socialIcons[kind]}
@@ -49,15 +49,15 @@ export default function Hero() {
           <p className="text-sm font-medium text-accent mb-4">Hello, I'm</p>
         </FadeIn>
         <FadeIn delay={80}>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-neutral-900 leading-[1.1]">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-neutral-900 dark:text-white leading-[1.1]">
             {profile.name}
           </h1>
         </FadeIn>
         <FadeIn delay={160}>
-          <h2 className="mt-4 text-xl md:text-2xl font-medium text-neutral-600">{profile.role}</h2>
+          <h2 className="mt-4 text-xl md:text-2xl font-medium text-neutral-600 dark:text-neutral-300">{profile.role}</h2>
         </FadeIn>
         <FadeIn delay={240}>
-          <p className="mt-6 max-w-2xl text-base md:text-lg text-neutral-500 leading-relaxed">
+          <p className="mt-6 max-w-2xl text-base md:text-lg text-neutral-500 dark:text-neutral-400 leading-relaxed">
             {profile.tagline}
           </p>
         </FadeIn>
@@ -66,13 +66,13 @@ export default function Hero() {
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
               href="#projects"
-              className="inline-flex items-center px-6 py-3 rounded-full bg-neutral-900 text-white text-sm font-medium hover:bg-neutral-700 transition-colors"
+              className="inline-flex items-center px-6 py-3 rounded-full bg-neutral-900 text-white dark:bg-white dark:text-neutral-900 text-sm font-medium hover:bg-neutral-700 dark:hover:bg-neutral-200 transition-colors"
             >
               View Projects
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center px-6 py-3 rounded-full border border-neutral-200 text-neutral-700 text-sm font-medium hover:border-neutral-300 hover:bg-neutral-50 transition-colors"
+              className="inline-flex items-center px-6 py-3 rounded-full border border-neutral-200 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 text-sm font-medium hover:border-neutral-300 dark:hover:border-neutral-500 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors"
             >
               Get in Touch
             </a>
