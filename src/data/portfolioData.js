@@ -23,10 +23,9 @@ export const profile = {
 }
 
 // The paragraph shown in the "About" section (src/components/About.jsx).
-export const about = `I'm a Computer Science undergraduate at Graphic Era University, Dehradun, maintaining a 9.45 CGPA. \
-I build full-stack web applications and explore applied AI — from Generative AI and LLMs to Retrieval-Augmented \
-Generation. I enjoy turning complex problems, like visualizing graph algorithms or automating code review, into \
-clean, usable software.`
+export const about = `I'm a Computer Science undergraduate at Graphic Era University, Dehradun, with a 9.45 CGPA.
+I build full-stack web applications and explore applied AI, including Generative AI, LLMs, and Retrieval-Augmented Generation (RAG).
+I enjoy turning complex problems into simple, scalable solutions while writing clean, maintainable code and continuously learning new technologies.`;
 
 // Each entry becomes one dot on the vertical timeline in src/components/Timeline.jsx.
 // Order matters — they render top to bottom in this array order.
