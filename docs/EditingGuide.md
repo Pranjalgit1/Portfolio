@@ -72,10 +72,10 @@ export const skills = [
 - **Reorder projects:** reorder the objects in the array.
 **After changing:** `src/components/Projects.jsx` and `ProjectCard.jsx` re-render the grid automatically — no other file needs touching.
 
-## Social links (GitHub / LinkedIn / LeetCode / Email / Phone)
+## Social links (GitHub / LinkedIn / LeetCode / Email)
 
 **File:** `src/data/portfolioData.js`
-**Section:** `profile.links` and `profile.email` / `profile.phone`
+**Section:** `profile.links` and `profile.email`
 ```js
 links: {
   github: 'https://github.com/pranjalgit1',
@@ -83,9 +83,8 @@ links: {
   leetcode: 'https://leetcode.com/your-handle',
 },
 email: 'pranjalchamoli99@gmail.com',
-phone: 'REDACTED',
 ```
-**After changing:** updates the Hero social icons, the Footer links, and the Contact section's email/phone buttons — all three read from this one object.
+**After changing:** updates the Hero social icons, the Footer links, and the Contact section's email button — all three read from this one object.
 
 ## Resume
 
@@ -99,7 +98,7 @@ There's no resume download link yet. To add one:
 
 ## Contact details
 
-**File:** `src/data/portfolioData.js` → `profile.email`, `profile.phone`. See "Social links" above — same fields.
+**File:** `src/data/portfolioData.js` → `profile.email`. See "Social links" above — same field.
 
 ## Theme colors
 

@@ -1,6 +1,6 @@
 // The "Contact" section. This is a static site with no backend, so instead
-// of a submit-able form it offers direct "mailto:" and "tel:" links that open
-// the visitor's own email/phone app pre-filled with your address/number.
+// of a submit-able form it offers a direct "mailto:" link that opens
+// the visitor's own email app pre-filled with your address.
 // (See docs/Future MERN Migration.md for how to turn this into a real form
 // backed by a Node/Express API later.)
 import { profile } from '../data/portfolioData'
@@ -31,12 +31,6 @@ export default function Contact() {
               className="inline-flex items-center px-6 py-3 rounded-full bg-neutral-900 text-white dark:bg-white dark:text-neutral-900 text-sm font-medium hover:bg-neutral-700 dark:hover:bg-neutral-200 transition-colors"
             >
               {profile.email}
-            </a>
-            <a
-              href={`tel:${profile.phone}`}
-              className="inline-flex items-center px-6 py-3 rounded-full border border-neutral-200 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 text-sm font-medium hover:border-neutral-300 dark:hover:border-neutral-500 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors"
-            >
-              {profile.phone}
             </a>
           </div>
         </FadeIn>

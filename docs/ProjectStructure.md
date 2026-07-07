@@ -87,7 +87,7 @@ A beginner's map of every file and folder in this project — why it exists, wha
 | `ProjectCard.jsx` | One individual project card | receives a `project` object as a prop (from `Projects.jsx`) |
 | `Skills.jsx` | Grid of skill category cards | `data/portfolioData.js` (skills), `FadeIn.jsx` |
 | `Certifications.jsx` | Grid of certification cards | `data/portfolioData.js` (certifications), `FadeIn.jsx` |
-| `Contact.jsx` | Email/phone call-to-action links | `data/portfolioData.js` (profile), `FadeIn.jsx` |
+| `Contact.jsx` | Email call-to-action link | `data/portfolioData.js` (profile), `FadeIn.jsx` |
 | `Footer.jsx` | Bottom copyright + social links | `data/portfolioData.js` (profile) |
 
 **When to edit a component file:** only when you want to change *how* a section looks or behaves (layout, spacing, animation). If you just want to change *what text/data* it shows, edit `portfolioData.js` instead.

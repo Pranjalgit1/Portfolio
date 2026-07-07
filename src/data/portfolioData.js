@@ -15,7 +15,6 @@ export const profile = {
   tagline: 'Building full-stack products and AI-powered tools — from trading platforms to code review assistants.',
   location: 'Dehradun, India',
   email: 'pranjalchamoli99@gmail.com',
-  phone: 'REDACTED',
   links: {
     github: 'https://github.com/Pranjalgit1', 
     linkedin: 'https://www.linkedin.com/in/pranjalchamoli/', 
